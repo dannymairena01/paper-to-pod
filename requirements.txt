@@ -3,3 +3,4 @@ pymupdf
 typer[all]
 python-dotenv
 rich
+streamlit

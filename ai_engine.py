@@ -29,13 +29,13 @@ def summarize_text(text: str) -> str:
     
     return response.choices[0].message.content
 
-def generate_audio(script: str, output_path: str):
+def generate_audio(script: str, output_path: str, voice: str = "alloy"):
     """
     Converts the script to audio using OpenAI's TTS API.
     """
     response = client.audio.speech.create(
         model="tts-1",
-        voice="alloy",
+        voice=voice,
         input=script
     )
     
