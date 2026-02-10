@@ -66,3 +66,17 @@ python main.py path/to/paper.pdf --output-audio my_podcast.mp3
 -   **Python 3.11+**
 -   **Streamlit** (Web UI)
 -   **OpenAI API** (GPT-4o & TTS-1)
+
+## Deployment
+
+The easiest way to deploy this app is with **Streamlit Community Cloud**:
+
+1.  Push your code to GitHub.
+2.  Go to [share.streamlit.io](https://share.streamlit.io/).
+3.  Click **New app** and select your repository (`paper-to-pod`).
+4.  Set the **Main file path** to `app.py`.
+5.  **Important:** Go to **Advanced settings** -> **Secrets** and add your API key:
+    ```toml
+    OPENAI_API_KEY = "sk-..."
+    ```
+6.  Click **Deploy**! 🚀
